@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simitex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/js-plugins/swiper/swiper.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__menu">
+            <a href="#"><img src="/images/logo_header.png" alt="Домашняя страница"></a>
+            <nav class="header__navigation">
+                <ul>
+                    <li class="header__navigation-item"><a href="#">Каталог</a></li>
+                    <li class="header__navigation-item"><a href="#">Производители</a></li>
+                    <li class="header__navigation-item"><a href="#">Для кого мы работаем</a></li>
+                    <li class="header__navigation-item"><a href="#">Сертификаты</a></li>
+                    <li class="header__navigation-item"><a href="#">О нас</a></li>
+                    <li class="header__navigation-item"><a href="#">FAQ</a></li>
+                    <li class="header__navigation-item"><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <a class="header__phone" href="tel:+78123135845">+7 (812) 313-58-45</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-left">
+                <h1 class="hero__title">Оптовые поставки <br> из Китая день в день</h1>
+                <p class="hero__title-helper">электронных компонентов</p>
+                <p class="hero__desc">
+                    Комплексные поставки электронных компонентов и оборудования. Подберем аналоги популярных брендов из
+                    Европы в условиях санкций.
+                </p>
+                <div class="hero__card">
+                    <ul>
+                        <li class="hero__points">Отсрочка платежей для постоянных клиентов</li>
+                        <li class="hero__points">Бесплатная доставка по Москве и СПБ в течение 2х часов</li>
+                        <li class="hero__points">Квалифицированный персональный менеджер</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hero-right">
+                <form class="backcall" action="#" method="post" id="backcall">
+                    <div class="backcall__toppart">
+                        <h3 class="backcall__header">Закажите обратный звонок</h3>
+                    </div>
+                    <div class="backcall__bottompart">
+                        <label for="fullname">Ваше имя*</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Петров Петр"
+                            aria-placeholder="Введите ваше имя"
+                            onkeyup="this.value = this.value.replace(/[^a-zA-Zа-яёА-ЯЁ]+/g, '');">
+                        <label for="phone">Ваш номер*</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+7 (_ _ _) _ _ _-_ _-_ _"
+                            aria-placeholder="Введите ваш телефонный номер">
+                        <button type="submit" aria-label="Подтвердить звонок">Заказать звонок</button>
+                        <span class="backcall__personal-data">Мы гарантируем конфиденциальность данных</span>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__desc">
+                <h2 class="about__header">Почему с нами выгодно</h2>
+                <p class="about__paragraph">С 1996 года мы занимаемся оптовыми поставками электронных компонентов от
+                    ведущих производителей из Европы
+                    и Азии для Российских потребителей.</p>
+            </div>
+            <div class="about__cards">
+                <div class="about__card">
+                    <img src="/images/icons/about1.svg" alt="Иконка">
+                    <h4 class="about__header4">Качественная продукция</h4>
+                    <p class="about__card-desc">Все наши товары сертифицированы и имеют сопроводительную документацию.
+                    </p>
+                </div>
+                <div class="about__card">
+                    <img src="/images/icons/about2.svg" alt="Иконка">
+                    <h4 class="about__header4">Индивидуальный подход</h4>
+                    <p class="about__card-desc">Возможность изготовления компонентов специально для вас
+                        на заводах-изготовителя.</p>
+                </div>
+                <div class="about__card">
+                    <img src="/images/icons/about3.svg" alt="Иконка">
+                    <h4 class="about__header4">Бесплатная доставка</h4>
+                    <p class="about__card-desc">При наличии товара на складе и заказе от 10 000 рублей,
+                        доставим бесплатно по Москве и СПБ в течение 2х часов.</p>
+                </div>
+                <div class="about__card">
+                    <img src="/images/icons/about4.svg" alt="Иконка">
+                    <h4 class="about__header4">Подбираем аналоги</h4>
+                    <p class="about__card-desc">Поможем подобрать аналоги популярных европейских брендов
+                        в условиях санкций.</p>
+                </div>
+                <div class="about__card">
+                    <img src="/images/icons/about5.svg" alt="Иконка">
+                    <h4 class="about__header4">Резервный запас компонентов</h4>
+                    <p class="about__card-desc">Хранение товара на наших складах для постоянных клиентов.</p>
+                </div>
+                <div class="about__card">
+                    <img src="/images/icons/about6.svg" alt="Иконка">
+                    <h4 class="about__header4">Гибкая система оплаты</h4>
+                    <p class="about__card-desc">Отсрочка платежей для постоянных клиентов.</p>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <h2 class="partners__header">Наши производители</h2>
+            <div class="partners__carousel">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="/images/partners/partner1.png" alt="Партнёр 1"></div>
+                        <div class="swiper-slide"><img src="/images/partners/partner2.png" alt="Партнёр 2"></div>
+                        <div class="swiper-slide"><img src="/images/partners/partner3.png" alt="Партнёр 3"></div>
+                        <div class="swiper-slide"><img src="/images/partners/partner4.png" alt="Партнёр 4"></div>
+                        <div class="swiper-slide"><img src="/images/partners/partner5.png" alt="Партнёр 5"></div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <img src="/images/icons/arrowprev.png" alt="Назад">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="/images/icons/arrownext.png" alt="Вперёд">
+                </div>
+            </div>
+            <p class="partners__desc">Lorem ipsum dolor sit amet consectetur. Non eget blandit in euismod felis id
+                quisque nunc. Non orci lacus elit mauris velit gravida imperdiet id. Ipsum pulvinar ac ut sociis. Sed
+                magna gravida consequat et euismod aenean quis mauris. Ut etiam egestas ultrices faucibus ultrices nisl
+                enim consequat faucibus. Nibh id leo ullamcorper eleifend. Id at commodo interdum et leo. </p>
+        </section>
+        <section class="scheme">
+            <h2 class="scheme__header">Схема работы</h2>
+            <p class="scheme__subheader">Lorem ipsum dolor sit amet consectetur. Augue velit in enim sagittis imperdiet
+                sit mauris. Vitae sit in fusce massa amet.</p>
+            <div class="scheme__cards">
+                <div class="scheme__card schemeone">
+                    <span class="scheme__number">01</span>
+                    <h4 class="scheme__title">ВЫ ОСТАВЛЯЕТЕ ЗАЯВКУ</h4>
+                    <p class="scheme__text">
+                        Отправить запрос вы можете любым удобным для вас способом: например, через форму на сайте. Также
+                        вы можете связаться с нами напрямую.
+                    </p>
+                </div>
+                <div class="scheme__card schemetwo">
+                    <span class="scheme__number">02</span>
+                    <h4 class="scheme__title">МЫ ПРОВЕРЯЕМ НАЛИЧИЕ ПОЗИЦИЙ</h4>
+                    <p class="scheme__text">
+                        Проверяем наличие на складе,
+                        а также актуальность производства (возможна замена, если необходимо.) Если требуется замена -
+                        подбираем аналоги и привозим на заказ.
+
+                    </p>
+                </div>
+                <div class="scheme__card schemethree">
+                    <span class="scheme__number">03</span>
+                    <h4 class="scheme__title">ФОРМИРУЕМ КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
+                    </h4>
+                    <p class="scheme__text">
+                        На данном этапе мы с вами согласуем ценовое предложение, обговариваем сроки поставки и условия
+                        оплаты.
+                    </p>
+                </div>
+                <div class="scheme__card schemesix">
+                    <span class="scheme__number">06</span>
+                    <h4 class="scheme__title">ВЫ ПОЛУЧАЕТЕ ТОВАР</h4>
+                    <p class="scheme__text">
+                        Поставляем вам товар в надлежащей упаковке в сопровождении оригиналов всех необходимых
+                        документов либо вы забираете его самовывозом.
+                    </p>
+                </div>
+                <div class="scheme__card schemefive">
+                    <span class="scheme__number">05</span>
+                    <h4 class="scheme__title">МЫ ВЫПОЛНЯЕМ ЗАКАЗ</h4>
+                    <p class="scheme__text">
+                        Товар поступает на склад в Москву или Санкт-Петербург, где мы сверяем правильность поставки и
+                        начинаем сборку.
+                    </p>
+                </div>
+                <div class="scheme__card schemefour">
+                    <span class="scheme__number">04</span>
+                    <h4 class="scheme__title">ПРОВОДИМ ОПЛАТУ</h4>
+                    <p class="scheme__text">
+                        Далее, после получения авансового платежа, мы размещаем заказ.
+                    </p>
+                </div>
+            </div>
+            <a class="scheme__button" href="#backcall">Оставить заявку</a>
+        </section>
+        <section class="questions">
+            <h2 class="questions__header">
+                Ответы на самые популярные вопросы в сфере
+            </h2>
+            <ul class="questions__list">
+                <li class="questions__item">
+                    <a href="#" class="questions__title">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</a>
+                    <span class="questions__arrow">
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z" fill="white"/>
+                            </svg>
+                            
+                    </span>
+                </li>
+                <div class="questions__item-block">
+                    <p>
+                        Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a variety of
+                        different medical therapies that utilize stem cells in some form to treat a patient. Sometimes
+                        the
+                        term is used incorrectly to refer to platelet rich plasma (PRP) injections. The term is also
+                        used to
+                        refer to stem cell transplants, also known as bone marrow transplants.
+                        <br><br>
+                        Most commonly “stem cell therapy” is used to describe a procedure where the patient’s adult stem
+                        cells and other potentially regenerative cells are harvested from a tissue sample of either fat
+                        or
+                        bone marrow taken from the patient. These concentrated regenerative cells are then used to treat
+                        specific injuries typically by injecting them into the afflicted area. It should be said that
+                        this
+                        type of stem cell therapy is currently not FDA approved and clinics performing it illegally in
+                        the
+                        US or in other countries perform various versions of the procedure to treat illnesses and
+                        injuries
+                        with little to no clinical evidence.
+                        <br><br>
+                        At InGeneron we use the term “regenerative cell therapy” since there are many different cell
+                        types
+                        and regenerative properties collected and used by our therapy along with adult stem cells.
+                        Importantly we do not treat patients outside of our approved clinical trials and we are
+                        dedicated to
+                        securing FDA approval through rigorous clinical testing.
+                    </p>
+                </div>
+                <li class="questions__item">
+                    <a href="#" class="questions__title">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</a>
+                    <span class="questions__arrow">
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z" fill="white"/>
+                        </svg>
+                        </span>
+                </li>
+                <div class="questions__item-block">
+                    <p>
+                        Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a variety of
+                        different medical therapies that utilize stem cells in some form to treat a patient. Sometimes
+                        the
+                        term is used incorrectly to refer to platelet rich plasma (PRP) injections. The term is also
+                        used to
+                        refer to stem cell transplants, also known as bone marrow transplants.
+                        <br><br>
+                        Most commonly “stem cell therapy” is used to describe a procedure where the patient’s adult stem
+                        cells and other potentially regenerative cells are harvested from a tissue sample of either fat
+                        or
+                        bone marrow taken from the patient. These concentrated regenerative cells are then used to treat
+                        specific injuries typically by injecting them into the afflicted area. It should be said that
+                        this
+                        type of stem cell therapy is currently not FDA approved and clinics performing it illegally in
+                        the
+                        US or in other countries perform various versions of the procedure to treat illnesses and
+                        injuries
+                        with little to no clinical evidence.
+                        <br><br>
+                        At InGeneron we use the term “regenerative cell therapy” since there are many different cell
+                        types
+                        and regenerative properties collected and used by our therapy along with adult stem cells.
+                        Importantly we do not treat patients outside of our approved clinical trials and we are
+                        dedicated to
+                        securing FDA approval through rigorous clinical testing.
+                    </p>
+                </div>
+                <li class="questions__item">
+                    <a href="#" class="questions__title">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</a>
+                    <span class="questions__arrow">
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z" fill="white"/>
+                        </svg>
+                        </span>
+                </li>
+                <div class="questions__item-block">
+                    <p>
+                        Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a variety of
+                        different medical therapies that utilize stem cells in some form to treat a patient. Sometimes
+                        the
+                        term is used incorrectly to refer to platelet rich plasma (PRP) injections. The term is also
+                        used to
+                        refer to stem cell transplants, also known as bone marrow transplants.
+                        <br><br>
+                        Most commonly “stem cell therapy” is used to describe a procedure where the patient’s adult stem
+                        cells and other potentially regenerative cells are harvested from a tissue sample of either fat
+                        or
+                        bone marrow taken from the patient. These concentrated regenerative cells are then used to treat
+                        specific injuries typically by injecting them into the afflicted area. It should be said that
+                        this
+                        type of stem cell therapy is currently not FDA approved and clinics performing it illegally in
+                        the
+                        US or in other countries perform various versions of the procedure to treat illnesses and
+                        injuries
+                        with little to no clinical evidence.
+                        <br><br>
+                        At InGeneron we use the term “regenerative cell therapy” since there are many different cell
+                        types
+                        and regenerative properties collected and used by our therapy along with adult stem cells.
+                        Importantly we do not treat patients outside of our approved clinical trials and we are
+                        dedicated to
+                        securing FDA approval through rigorous clinical testing.
+                    </p>
+                </div>
+                <li class="questions__item">
+                    <a href="#" class="questions__title">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</a>
+                    <span class="questions__arrow">
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z" fill="white"/>
+                        </svg>
+                        </span>
+                </li>
+                <div class="questions__item-block">
+                    <p>
+                        Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a variety of
+                        different medical therapies that utilize stem cells in some form to treat a patient. Sometimes
+                        the
+                        term is used incorrectly to refer to platelet rich plasma (PRP) injections. The term is also
+                        used to
+                        refer to stem cell transplants, also known as bone marrow transplants.
+                        <br><br>
+                        Most commonly “stem cell therapy” is used to describe a procedure where the patient’s adult stem
+                        cells and other potentially regenerative cells are harvested from a tissue sample of either fat
+                        or
+                        bone marrow taken from the patient. These concentrated regenerative cells are then used to treat
+                        specific injuries typically by injecting them into the afflicted area. It should be said that
+                        this
+                        type of stem cell therapy is currently not FDA approved and clinics performing it illegally in
+                        the
+                        US or in other countries perform various versions of the procedure to treat illnesses and
+                        injuries
+                        with little to no clinical evidence.
+                        <br><br>
+                        At InGeneron we use the term “regenerative cell therapy” since there are many different cell
+                        types
+                        and regenerative properties collected and used by our therapy along with adult stem cells.
+                        Importantly we do not treat patients outside of our approved clinical trials and we are
+                        dedicated to
+                        securing FDA approval through rigorous clinical testing.
+                    </p>
+                </div>
+                <li class="questions__item">
+                    <a href="#" class="questions__title">Lorem ipsum dolor sit amet consectetur. Ultrices aliquam.</a>
+                    <span class="questions__arrow">
+                        <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.0013 1.16105C14.0018 1.31044 13.9688 1.45805 13.9048 1.59303C13.8407 1.72801 13.7473 1.84693 13.6313 1.94105L7.63125 6.77105C7.45232 6.91813 7.22788 6.99853 6.99625 6.99853C6.76463 6.99853 6.54018 6.91813 6.36125 6.77105L0.361252 1.77105C0.157035 1.60131 0.028611 1.3574 0.00423124 1.09297C-0.0201485 0.828545 0.0615134 0.565264 0.231252 0.361047C0.40099 0.156831 0.644902 0.0284066 0.909328 0.00402685C1.17375 -0.0203529 1.43704 0.0613083 1.64125 0.231047L7.00125 4.70105L12.3613 0.381047C12.508 0.258764 12.6868 0.181087 12.8763 0.157207C13.0659 0.133328 13.2583 0.164245 13.4308 0.246301C13.6034 0.328357 13.7488 0.458116 13.8499 0.620227C13.9509 0.782337 14.0035 0.970013 14.0013 1.16105Z" fill="white"/>
+                        </svg>
+                        </span>
+                </li>
+                <div class="questions__item-block">
+                    <p>
+                        Like the phrase “stem cell” itself, “stem cell therapy” is often used to describe a variety of
+                        different medical therapies that utilize stem cells in some form to treat a patient. Sometimes
+                        the
+                        term is used incorrectly to refer to platelet rich plasma (PRP) injections. The term is also
+                        used to
+                        refer to stem cell transplants, also known as bone marrow transplants.
+                        <br><br>
+                        Most commonly “stem cell therapy” is used to describe a procedure where the patient’s adult stem
+                        cells and other potentially regenerative cells are harvested from a tissue sample of either fat
+                        or
+                        bone marrow taken from the patient. These concentrated regenerative cells are then used to treat
+                        specific injuries typically by injecting them into the afflicted area. It should be said that
+                        this
+                        type of stem cell therapy is currently not FDA approved and clinics performing it illegally in
+                        the
+                        US or in other countries perform various versions of the procedure to treat illnesses and
+                        injuries
+                        with little to no clinical evidence.
+                        <br><br>
+                        At InGeneron we use the term “regenerative cell therapy” since there are many different cell
+                        types
+                        and regenerative properties collected and used by our therapy along with adult stem cells.
+                        Importantly we do not treat patients outside of our approved clinical trials and we are
+                        dedicated to
+                        securing FDA approval through rigorous clinical testing.
+                    </p>
+                </div>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__menu">
+            <a href="#" class="footer__logo"><img src="/images/logo_footer.png" alt="Главная страница"></a>
+            <ul class="footer__list">
+                <li class="footer__item">Каталог</li>
+                <li class="footer__item">Производители</li>
+                <li class="footer__item">Для  кого мы работаем</li>
+                <li class="footer__item">Сертификаты</li>
+                <li class="footer__item">О нас</li>
+                <li class="footer__item">Контакты</li>
+            </ul>
+            <a class="footer__button" href="#backcall">Оставить заявку</a>
+        </div>
+    </footer>
+    <svg width="0" height="0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <clipPath id="questionsMask">
+                <path d="M0 690H1920V1271H0V690Z" fill="url(#paint0_linear_21_164)" />
+                <path
+                    d="M1920 29L1689.02 48.8519L1684.21 49.1815L1679.4 49.5061L1674.59 49.8257L1669.77 50.1401L1664.96 50.4493L1660.15 50.7532L1655.34 51.0518L1650.53 51.3449L1645.71 51.6325L1640.9 51.9145L1636.09 52.1909L1631.28 52.4615L1626.47 52.7263L1621.65 52.9854L1616.84 53.2384L1612.03 53.4855L1607.22 53.7266L1602.41 53.9615L1597.59 54.1903L1592.78 54.4129L1587.97 54.6292L1583.16 54.8392L1578.35 55.0428L1573.53 55.24L1568.72 55.4307L1563.91 55.6149L1559.1 55.7925L1554.29 55.9635L1549.47 56.1279L1544.66 56.2855L1539.85 56.4365L1535.04 56.5806L1530.23 56.718L1525.41 56.8485L1520.6 56.9722L1515.79 57.0889L1510.98 57.1987L1506.17 57.3016L1501.35 57.3975L1496.54 57.4863L1491.73 57.5682L1486.92 57.6429L1482.11 57.7107L1477.29 57.7713L1472.48 57.8249L1467.67 57.8713L1462.86 57.9106L1458.05 57.9427L1453.23 57.9678L1448.42 57.9857L1443.61 57.9964L1438.8 58L1433.98 57.9964L1429.17 57.9857L1424.36 57.9678L1419.55 57.9427L1414.74 57.9106L1409.92 57.8713L1405.11 57.8249L1400.3 57.7713L1395.49 57.7107L1390.68 57.6429L1385.86 57.5682L1381.05 57.4863L1376.24 57.3975L1371.43 57.3016L1366.62 57.1987L1361.8 57.0889L1356.99 56.9722L1352.18 56.8485L1347.37 56.718L1342.56 56.5806L1337.74 56.4365L1332.93 56.2855L1328.12 56.1279L1323.31 55.9635L1318.5 55.7925L1313.68 55.6149L1308.87 55.4307L1304.06 55.24L1299.25 55.0428L1294.44 54.8392L1289.62 54.6292L1284.81 54.4129L1280 54.1903L1275.19 53.9615L1270.38 53.7266L1265.56 53.4855L1260.75 53.2384L1255.94 52.9854L1251.13 52.7263L1246.32 52.4615L1241.5 52.1909L1236.69 51.9145L1231.88 51.6325L1227.07 51.3449L1222.26 51.0518L1217.44 50.7532L1212.63 50.4493L1207.82 50.1401L1203.01 49.8257L1198.2 49.5061L1193.38 49.1815L1188.57 48.8519L726.617 9.14813L721.805 8.81854L716.993 8.4939L712.181 8.17432L707.369 7.85992L702.556 7.55072L697.744 7.24677L692.932 6.94824L688.12 6.65509L683.308 6.36749L678.496 6.08551L673.684 5.80914L668.872 5.53851L664.06 5.27368L659.248 5.01465L654.436 4.7616L649.624 4.51453L644.812 4.27344L640 4.03845L635.188 3.80969L630.376 3.5871L625.564 3.37079L620.752 3.16083L615.94 2.95721L611.128 2.76001L606.316 2.56934L601.504 2.38513L596.692 2.20752L591.88 2.0365L587.068 1.87213L582.256 1.71448L577.444 1.56354L572.632 1.41937L567.82 1.28198L563.008 1.15149L558.196 1.02783L553.384 0.911072L548.572 0.80127L543.76 0.698425L538.947 0.602539L534.135 0.513672L529.323 0.431824L524.511 0.357056L519.699 0.289307L514.887 0.228699L510.075 0.17511L505.263 0.128723L500.451 0.0894165L495.639 0.057251L490.827 0.0321655L486.015 0.0142822L481.203 0.00360107L476.391 0L471.579 0.00360107L466.767 0.0142822L461.955 0.0321655L457.143 0.057251L452.331 0.0894165L447.519 0.128723L442.707 0.17511L437.895 0.228699L433.083 0.289307L428.271 0.357056L423.459 0.431824L418.647 0.513672L413.835 0.602539L409.023 0.698425L404.211 0.80127L399.399 0.911072L394.587 1.02783L389.775 1.15149L384.963 1.28198L380.15 1.41937L375.338 1.56354L370.526 1.71448L365.714 1.87213L360.902 2.0365L356.09 2.20752L351.278 2.38513L346.466 2.56934L341.654 2.76001L336.842 2.95721L332.03 3.16083L327.218 3.37079L322.406 3.5871L317.594 3.80969L312.782 4.03845L307.97 4.27344L303.158 4.51453L298.346 4.7616L293.534 5.01465L288.722 5.27368L283.91 5.53851L279.098 5.80914L274.286 6.08551L269.474 6.36749L264.662 6.65509L259.85 6.94824L255.038 7.24677L250.226 7.55072L245.414 7.85992L240.602 8.17432L235.79 8.4939L230.978 8.81854L226.166 9.14813L0.00012207 28.5445V523H1920V29Z"
+                    fill="url(#paint1_linear_21_164)" />
+                <path
+                    d="M0 699L230.977 679.148L235.789 678.819L240.601 678.494L245.414 678.174L250.226 677.86L255.038 677.551L259.85 677.247L264.662 676.948L269.474 676.655L274.286 676.367L279.098 676.086L283.91 675.809L288.722 675.539L293.534 675.274L298.346 675.015L303.158 674.762L307.97 674.515L312.782 674.273L317.594 674.038L322.406 673.81L327.218 673.587L332.03 673.371L336.842 673.161L341.654 672.957L346.466 672.76L351.278 672.569L356.09 672.385L360.902 672.208L365.714 672.036L370.526 671.872L375.338 671.714L380.15 671.564L384.962 671.419L389.774 671.282L394.586 671.151L399.398 671.028L404.211 670.911L409.023 670.801L413.835 670.698L418.647 670.603L423.459 670.514L428.271 670.432L433.083 670.357L437.895 670.289L442.707 670.229L447.519 670.175L452.331 670.129L457.143 670.089L461.955 670.057L466.767 670.032L471.579 670.014L476.391 670.004L481.203 670L486.015 670.004L490.827 670.014L495.639 670.032L500.451 670.057L505.263 670.089L510.075 670.129L514.887 670.175L519.699 670.229L524.511 670.289L529.323 670.357L534.135 670.432L538.947 670.514L543.759 670.603L548.571 670.698L553.383 670.801L558.195 670.911L563.008 671.028L567.82 671.151L572.632 671.282L577.444 671.419L582.256 671.564L587.068 671.714L591.88 671.872L596.692 672.036L601.504 672.208L606.316 672.385L611.128 672.569L615.94 672.76L620.752 672.957L625.564 673.161L630.376 673.371L635.188 673.587L640 673.81L644.812 674.038L649.624 674.273L654.436 674.515L659.248 674.762L664.06 675.015L668.872 675.274L673.684 675.539L678.496 675.809L683.308 676.086L688.12 676.367L692.932 676.655L697.744 676.948L702.556 677.247L707.368 677.551L712.18 677.86L716.992 678.174L721.805 678.494L726.617 678.819L731.429 679.148L1193.38 718.852L1198.2 719.181L1203.01 719.506L1207.82 719.826L1212.63 720.14L1217.44 720.449L1222.26 720.753L1227.07 721.052L1231.88 721.345L1236.69 721.633L1241.5 721.914L1246.32 722.191L1251.13 722.461L1255.94 722.726L1260.75 722.985L1265.56 723.238L1270.38 723.485L1275.19 723.727L1280 723.962L1284.81 724.19L1289.62 724.413L1294.44 724.629L1299.25 724.839L1304.06 725.043L1308.87 725.24L1313.68 725.431L1318.5 725.615L1323.31 725.792L1328.12 725.964L1332.93 726.128L1337.74 726.286L1342.56 726.436L1347.37 726.581L1352.18 726.718L1356.99 726.849L1361.8 726.972L1366.62 727.089L1371.43 727.199L1376.24 727.302L1381.05 727.397L1385.86 727.486L1390.68 727.568L1395.49 727.643L1400.3 727.711L1405.11 727.771L1409.92 727.825L1414.74 727.871L1419.55 727.911L1424.36 727.943L1429.17 727.968L1433.98 727.986L1438.8 727.996L1443.61 728L1448.42 727.996L1453.23 727.986L1458.05 727.968L1462.86 727.943L1467.67 727.911L1472.48 727.871L1477.29 727.825L1482.11 727.771L1486.92 727.711L1491.73 727.643L1496.54 727.568L1501.35 727.486L1506.17 727.397L1510.98 727.302L1515.79 727.199L1520.6 727.089L1525.41 726.972L1530.23 726.849L1535.04 726.718L1539.85 726.581L1544.66 726.436L1549.47 726.286L1554.29 726.128L1559.1 725.964L1563.91 725.792L1568.72 725.615L1573.53 725.431L1578.35 725.24L1583.16 725.043L1587.97 724.839L1592.78 724.629L1597.59 724.413L1602.41 724.19L1607.22 723.962L1612.03 723.727L1616.84 723.485L1621.65 723.238L1626.47 722.985L1631.28 722.726L1636.09 722.461L1640.9 722.191L1645.71 721.914L1650.53 721.633L1655.34 721.345L1660.15 721.052L1664.96 720.753L1669.77 720.449L1674.59 720.14L1679.4 719.826L1684.21 719.506L1689.02 719.181L1693.83 718.852L1920 699.456V181H0V699Z"
+                    fill="url(#paint2_linear_21_164)" />
+                <path
+                    d="M1920 53L1689.02 72.8519L1684.21 73.1815L1679.4 73.5061L1674.59 73.8257L1669.77 74.1401L1664.96 74.4493L1660.15 74.7532L1655.34 75.0518L1650.53 75.3449L1645.71 75.6325L1640.9 75.9145L1636.09 76.1909L1631.28 76.4615L1626.47 76.7263L1621.65 76.9854L1616.84 77.2384L1612.03 77.4855L1607.22 77.7266L1602.41 77.9615L1597.59 78.1903L1592.78 78.4129L1587.97 78.6292L1583.16 78.8392L1578.35 79.0428L1573.53 79.24L1568.72 79.4307L1563.91 79.6149L1559.1 79.7925L1554.29 79.9635L1549.47 80.1279L1544.66 80.2855L1539.85 80.4365L1535.04 80.5806L1530.23 80.718L1525.41 80.8485L1520.6 80.9722L1515.79 81.0889L1510.98 81.1987L1506.17 81.3016L1501.35 81.3975L1496.54 81.4863L1491.73 81.5682L1486.92 81.6429L1482.11 81.7107L1477.29 81.7713L1472.48 81.8249L1467.67 81.8713L1462.86 81.9106L1458.05 81.9427L1453.23 81.9678L1448.42 81.9857L1443.61 81.9964L1438.8 82L1433.98 81.9964L1429.17 81.9857L1424.36 81.9678L1419.55 81.9427L1414.74 81.9106L1409.92 81.8713L1405.11 81.8249L1400.3 81.7713L1395.49 81.7107L1390.68 81.6429L1385.86 81.5682L1381.05 81.4863L1376.24 81.3975L1371.43 81.3016L1366.62 81.1987L1361.8 81.0889L1356.99 80.9722L1352.18 80.8485L1347.37 80.718L1342.56 80.5806L1337.74 80.4365L1332.93 80.2855L1328.12 80.1279L1323.31 79.9635L1318.5 79.7925L1313.68 79.6149L1308.87 79.4307L1304.06 79.24L1299.25 79.0428L1294.44 78.8392L1289.62 78.6292L1284.81 78.4129L1280 78.1903L1275.19 77.9615L1270.38 77.7266L1265.56 77.4855L1260.75 77.2384L1255.94 76.9854L1251.13 76.7263L1246.32 76.4615L1241.5 76.1909L1236.69 75.9145L1231.88 75.6325L1227.07 75.3449L1222.26 75.0518L1217.44 74.7532L1212.63 74.4493L1207.82 74.1401L1203.01 73.8257L1198.2 73.5061L1193.38 73.1815L1188.57 72.8519L726.617 33.1481L721.805 32.8185L716.993 32.4939L712.181 32.1743L707.369 31.8599L702.556 31.5507L697.744 31.2468L692.932 30.9482L688.12 30.6551L683.308 30.3675L678.496 30.0855L673.684 29.8091L668.872 29.5385L664.06 29.2737L659.248 29.0146L654.436 28.7616L649.624 28.5145L644.812 28.2734L640 28.0385L635.188 27.8097L630.376 27.5871L625.564 27.3708L620.752 27.1608L615.94 26.9572L611.128 26.76L606.316 26.5693L601.504 26.3851L596.692 26.2075L591.88 26.0365L587.068 25.8721L582.256 25.7145L577.444 25.5635L572.632 25.4194L567.82 25.282L563.008 25.1515L558.196 25.0278L553.384 24.9111L548.572 24.8013L543.76 24.6984L538.947 24.6025L534.135 24.5137L529.323 24.4318L524.511 24.3571L519.699 24.2893L514.887 24.2287L510.075 24.1751L505.263 24.1287L500.451 24.0894L495.639 24.0573L490.827 24.0322L486.015 24.0143L481.203 24.0036L476.391 24L471.579 24.0036L466.767 24.0143L461.955 24.0322L457.143 24.0573L452.331 24.0894L447.519 24.1287L442.707 24.1751L437.895 24.2287L433.083 24.2893L428.271 24.3571L423.459 24.4318L418.647 24.5137L413.835 24.6025L409.023 24.6984L404.211 24.8013L399.399 24.9111L394.587 25.0278L389.775 25.1515L384.963 25.282L380.15 25.4194L375.338 25.5635L370.526 25.7145L365.714 25.8721L360.902 26.0365L356.09 26.2075L351.278 26.3851L346.466 26.5693L341.654 26.76L336.842 26.9572L332.03 27.1608L327.218 27.3708L322.406 27.5871L317.594 27.8097L312.782 28.0385L307.97 28.2734L303.158 28.5145L298.346 28.7616L293.534 29.0146L288.722 29.2737L283.91 29.5385L279.098 29.8091L274.286 30.0855L269.474 30.3675L264.662 30.6551L259.85 30.9482L255.038 31.2468L250.226 31.5507L245.414 31.8599L240.602 32.1743L235.79 32.4939L230.978 32.8185L226.166 33.1481L0.00012207 52.5445V547H1920V53Z"
+                    fill="url(#paint3_linear_21_164)" />
+                <path
+                    d="M0 723L230.977 703.148L235.789 702.819L240.601 702.494L245.414 702.174L250.226 701.86L255.038 701.551L259.85 701.247L264.662 700.948L269.474 700.655L274.286 700.367L279.098 700.086L283.91 699.809L288.722 699.539L293.534 699.274L298.346 699.015L303.158 698.762L307.97 698.515L312.782 698.273L317.594 698.038L322.406 697.81L327.218 697.587L332.03 697.371L336.842 697.161L341.654 696.957L346.466 696.76L351.278 696.569L356.09 696.385L360.902 696.208L365.714 696.036L370.526 695.872L375.338 695.714L380.15 695.564L384.962 695.419L389.774 695.282L394.586 695.151L399.398 695.028L404.211 694.911L409.023 694.801L413.835 694.698L418.647 694.603L423.459 694.514L428.271 694.432L433.083 694.357L437.895 694.289L442.707 694.229L447.519 694.175L452.331 694.129L457.143 694.089L461.955 694.057L466.767 694.032L471.579 694.014L476.391 694.004L481.203 694L486.015 694.004L490.827 694.014L495.639 694.032L500.451 694.057L505.263 694.089L510.075 694.129L514.887 694.175L519.699 694.229L524.511 694.289L529.323 694.357L534.135 694.432L538.947 694.514L543.759 694.603L548.571 694.698L553.383 694.801L558.195 694.911L563.008 695.028L567.82 695.151L572.632 695.282L577.444 695.419L582.256 695.564L587.068 695.714L591.88 695.872L596.692 696.036L601.504 696.208L606.316 696.385L611.128 696.569L615.94 696.76L620.752 696.957L625.564 697.161L630.376 697.371L635.188 697.587L640 697.81L644.812 698.038L649.624 698.273L654.436 698.515L659.248 698.762L664.06 699.015L668.872 699.274L673.684 699.539L678.496 699.809L683.308 700.086L688.12 700.367L692.932 700.655L697.744 700.948L702.556 701.247L707.368 701.551L712.18 701.86L716.992 702.174L721.805 702.494L726.617 702.819L731.429 703.148L1193.38 742.852L1198.2 743.181L1203.01 743.506L1207.82 743.826L1212.63 744.14L1217.44 744.449L1222.26 744.753L1227.07 745.052L1231.88 745.345L1236.69 745.633L1241.5 745.914L1246.32 746.191L1251.13 746.461L1255.94 746.726L1260.75 746.985L1265.56 747.238L1270.38 747.485L1275.19 747.727L1280 747.962L1284.81 748.19L1289.62 748.413L1294.44 748.629L1299.25 748.839L1304.06 749.043L1308.87 749.24L1313.68 749.431L1318.5 749.615L1323.31 749.792L1328.12 749.964L1332.93 750.128L1337.74 750.286L1342.56 750.436L1347.37 750.581L1352.18 750.718L1356.99 750.849L1361.8 750.972L1366.62 751.089L1371.43 751.199L1376.24 751.302L1381.05 751.397L1385.86 751.486L1390.68 751.568L1395.49 751.643L1400.3 751.711L1405.11 751.771L1409.92 751.825L1414.74 751.871L1419.55 751.911L1424.36 751.943L1429.17 751.968L1433.98 751.986L1438.8 751.996L1443.61 752L1448.42 751.996L1453.23 751.986L1458.05 751.968L1462.86 751.943L1467.67 751.911L1472.48 751.871L1477.29 751.825L1482.11 751.771L1486.92 751.711L1491.73 751.643L1496.54 751.568L1501.35 751.486L1506.17 751.397L1510.98 751.302L1515.79 751.199L1520.6 751.089L1525.41 750.972L1530.23 750.849L1535.04 750.718L1539.85 750.581L1544.66 750.436L1549.47 750.286L1554.29 750.128L1559.1 749.964L1563.91 749.792L1568.72 749.615L1573.53 749.431L1578.35 749.24L1583.16 749.043L1587.97 748.839L1592.78 748.629L1597.59 748.413L1602.41 748.19L1607.22 747.962L1612.03 747.727L1616.84 747.485L1621.65 747.238L1626.47 746.985L1631.28 746.726L1636.09 746.461L1640.9 746.191L1645.71 745.914L1650.53 745.633L1655.34 745.345L1660.15 745.052L1664.96 744.753L1669.77 744.449L1674.59 744.14L1679.4 743.826L1684.21 743.506L1689.02 743.181L1693.83 742.852L1920 723.456V205H0V723Z"
+                    fill="url(#paint4_linear_21_164)" />
+            </clipPath>
+        </defs>
+    </svg>
+    <svg width="0" height="0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <clipPath id="schemeMask">
+                <path
+                    d="M1920 29L1689.02 48.8519L1684.21 49.1815L1679.4 49.5061L1674.59 49.8257L1669.77 50.1401L1664.96 50.4493L1660.15 50.7532L1655.34 51.0518L1650.53 51.3449L1645.71 51.6325L1640.9 51.9145L1636.09 52.1909L1631.28 52.4615L1626.47 52.7263L1621.65 52.9854L1616.84 53.2384L1612.03 53.4855L1607.22 53.7266L1602.41 53.9615L1597.59 54.1903L1592.78 54.4129L1587.97 54.6292L1583.16 54.8392L1578.35 55.0428L1573.53 55.24L1568.72 55.4307L1563.91 55.6149L1559.1 55.7925L1554.29 55.9635L1549.47 56.1279L1544.66 56.2855L1539.85 56.4365L1535.04 56.5806L1530.23 56.718L1525.41 56.8485L1520.6 56.9722L1515.79 57.0889L1510.98 57.1987L1506.17 57.3016L1501.35 57.3975L1496.54 57.4863L1491.73 57.5682L1486.92 57.6429L1482.11 57.7107L1477.29 57.7713L1472.48 57.8249L1467.67 57.8713L1462.86 57.9106L1458.05 57.9427L1453.23 57.9678L1448.42 57.9857L1443.61 57.9964L1438.8 58L1433.98 57.9964L1429.17 57.9857L1424.36 57.9678L1419.55 57.9427L1414.74 57.9106L1409.92 57.8713L1405.11 57.8249L1400.3 57.7713L1395.49 57.7107L1390.68 57.6429L1385.86 57.5682L1381.05 57.4863L1376.24 57.3975L1371.43 57.3016L1366.62 57.1987L1361.8 57.0889L1356.99 56.9722L1352.18 56.8485L1347.37 56.718L1342.56 56.5806L1337.74 56.4365L1332.93 56.2855L1328.12 56.1279L1323.31 55.9635L1318.5 55.7925L1313.68 55.6149L1308.87 55.4307L1304.06 55.24L1299.25 55.0428L1294.44 54.8392L1289.62 54.6292L1284.81 54.4129L1280 54.1903L1275.19 53.9615L1270.38 53.7266L1265.56 53.4855L1260.75 53.2384L1255.94 52.9854L1251.13 52.7263L1246.32 52.4615L1241.5 52.1909L1236.69 51.9145L1231.88 51.6325L1227.07 51.3449L1222.26 51.0518L1217.44 50.7532L1212.63 50.4493L1207.82 50.1401L1203.01 49.8257L1198.2 49.5061L1193.38 49.1815L1188.57 48.8519L726.617 9.14813L721.805 8.81854L716.993 8.4939L712.181 8.17432L707.369 7.85992L702.556 7.55072L697.744 7.24677L692.932 6.94824L688.12 6.65509L683.308 6.36749L678.496 6.08551L673.684 5.80914L668.872 5.53851L664.06 5.27368L659.248 5.01465L654.436 4.7616L649.624 4.51453L644.812 4.27344L640 4.03845L635.188 3.80969L630.376 3.5871L625.564 3.37079L620.752 3.16083L615.94 2.95721L611.128 2.76001L606.316 2.56934L601.504 2.38513L596.692 2.20752L591.88 2.0365L587.068 1.87213L582.256 1.71448L577.444 1.56354L572.632 1.41937L567.82 1.28198L563.008 1.15149L558.196 1.02783L553.384 0.911072L548.572 0.80127L543.76 0.698425L538.947 0.602539L534.135 0.513672L529.323 0.431824L524.511 0.357056L519.699 0.289307L514.887 0.228699L510.075 0.17511L505.263 0.128723L500.451 0.0894165L495.639 0.057251L490.827 0.0321655L486.015 0.0142822L481.203 0.00360107L476.391 0L471.579 0.00360107L466.767 0.0142822L461.955 0.0321655L457.143 0.057251L452.331 0.0894165L447.519 0.128723L442.707 0.17511L437.895 0.228699L433.083 0.289307L428.271 0.357056L423.459 0.431824L418.647 0.513672L413.835 0.602539L409.023 0.698425L404.211 0.80127L399.399 0.911072L394.587 1.02783L389.775 1.15149L384.963 1.28198L380.15 1.41937L375.338 1.56354L370.526 1.71448L365.714 1.87213L360.902 2.0365L356.09 2.20752L351.278 2.38513L346.466 2.56934L341.654 2.76001L336.842 2.95721L332.03 3.16083L327.218 3.37079L322.406 3.5871L317.594 3.80969L312.782 4.03845L307.97 4.27344L303.158 4.51453L298.346 4.7616L293.534 5.01465L288.722 5.27368L283.91 5.53851L279.098 5.80914L274.286 6.08551L269.474 6.36749L264.662 6.65509L259.85 6.94824L255.038 7.24677L250.226 7.55072L245.414 7.85992L240.602 8.17432L235.79 8.4939L230.978 8.81854L226.166 9.14813L0.00012207 28.5445V850H1920V29Z"
+                    fill="#F2F2F4" />
+                <path
+                    d="M0 1069L230.977 1049.15L235.789 1048.82L240.601 1048.49L245.414 1048.17L250.226 1047.86L255.038 1047.55L259.85 1047.25L264.662 1046.95L269.474 1046.66L274.286 1046.37L279.098 1046.09L283.91 1045.81L288.722 1045.54L293.534 1045.27L298.346 1045.01L303.158 1044.76L307.97 1044.51L312.782 1044.27L317.594 1044.04L322.406 1043.81L327.218 1043.59L332.03 1043.37L336.842 1043.16L341.654 1042.96L346.466 1042.76L351.278 1042.57L356.09 1042.39L360.902 1042.21L365.714 1042.04L370.526 1041.87L375.338 1041.71L380.15 1041.56L384.962 1041.42L389.774 1041.28L394.586 1041.15L399.398 1041.03L404.211 1040.91L409.023 1040.8L413.835 1040.7L418.647 1040.6L423.459 1040.51L428.271 1040.43L433.083 1040.36L437.895 1040.29L442.707 1040.23L447.519 1040.18L452.331 1040.13L457.143 1040.09L461.955 1040.06L466.767 1040.03L471.579 1040.01L476.391 1040L481.203 1040L486.015 1040L490.827 1040.01L495.639 1040.03L500.451 1040.06L505.263 1040.09L510.075 1040.13L514.887 1040.18L519.699 1040.23L524.511 1040.29L529.323 1040.36L534.135 1040.43L538.947 1040.51L543.759 1040.6L548.571 1040.7L553.383 1040.8L558.195 1040.91L563.008 1041.03L567.82 1041.15L572.632 1041.28L577.444 1041.42L582.256 1041.56L587.068 1041.71L591.88 1041.87L596.692 1042.04L601.504 1042.21L606.316 1042.39L611.128 1042.57L615.94 1042.76L620.752 1042.96L625.564 1043.16L630.376 1043.37L635.188 1043.59L640 1043.81L644.812 1044.04L649.624 1044.27L654.436 1044.51L659.248 1044.76L664.06 1045.01L668.872 1045.27L673.684 1045.54L678.496 1045.81L683.308 1046.09L688.12 1046.37L692.932 1046.66L697.744 1046.95L702.556 1047.25L707.368 1047.55L712.18 1047.86L716.992 1048.17L721.805 1048.49L726.617 1048.82L731.429 1049.15L1193.38 1088.85L1198.2 1089.18L1203.01 1089.51L1207.82 1089.83L1212.63 1090.14L1217.44 1090.45L1222.26 1090.75L1227.07 1091.05L1231.88 1091.34L1236.69 1091.63L1241.5 1091.91L1246.32 1092.19L1251.13 1092.46L1255.94 1092.73L1260.75 1092.99L1265.56 1093.24L1270.38 1093.49L1275.19 1093.73L1280 1093.96L1284.81 1094.19L1289.62 1094.41L1294.44 1094.63L1299.25 1094.84L1304.06 1095.04L1308.87 1095.24L1313.68 1095.43L1318.5 1095.61L1323.31 1095.79L1328.12 1095.96L1332.93 1096.13L1337.74 1096.29L1342.56 1096.44L1347.37 1096.58L1352.18 1096.72L1356.99 1096.85L1361.8 1096.97L1366.62 1097.09L1371.43 1097.2L1376.24 1097.3L1381.05 1097.4L1385.86 1097.49L1390.68 1097.57L1395.49 1097.64L1400.3 1097.71L1405.11 1097.77L1409.92 1097.82L1414.74 1097.87L1419.55 1097.91L1424.36 1097.94L1429.17 1097.97L1433.98 1097.99L1438.8 1098L1443.61 1098L1448.42 1098L1453.23 1097.99L1458.05 1097.97L1462.86 1097.94L1467.67 1097.91L1472.48 1097.87L1477.29 1097.82L1482.11 1097.77L1486.92 1097.71L1491.73 1097.64L1496.54 1097.57L1501.35 1097.49L1506.17 1097.4L1510.98 1097.3L1515.79 1097.2L1520.6 1097.09L1525.41 1096.97L1530.23 1096.85L1535.04 1096.72L1539.85 1096.58L1544.66 1096.44L1549.47 1096.29L1554.29 1096.13L1559.1 1095.96L1563.91 1095.79L1568.72 1095.61L1573.53 1095.43L1578.35 1095.24L1583.16 1095.04L1587.97 1094.84L1592.78 1094.63L1597.59 1094.41L1602.41 1094.19L1607.22 1093.96L1612.03 1093.73L1616.84 1093.49L1621.65 1093.24L1626.47 1092.99L1631.28 1092.73L1636.09 1092.46L1640.9 1092.19L1645.71 1091.91L1650.53 1091.63L1655.34 1091.34L1660.15 1091.05L1664.96 1090.75L1669.77 1090.45L1674.59 1090.14L1679.4 1089.83L1684.21 1089.51L1689.02 1089.18L1693.83 1088.85L1920 1069.46V248H0V1069Z"
+                    fill="#F2F2F4" />
+            </clipPath>
+        </defs>
+    </svg>
+    <svg width="0" height="0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <clipPath id="partnersMask">
+                <path
+                    d="M1920 29L1689.02 48.8519L1684.21 49.1815L1679.4 49.5061L1674.59 49.8257L1669.77 50.1401L1664.96 50.4493L1660.15 50.7532L1655.34 51.0518L1650.53 51.3449L1645.71 51.6325L1640.9 51.9145L1636.09 52.1909L1631.28 52.4615L1626.47 52.7263L1621.65 52.9854L1616.84 53.2384L1612.03 53.4855L1607.22 53.7266L1602.41 53.9615L1597.59 54.1903L1592.78 54.4129L1587.97 54.6292L1583.16 54.8392L1578.35 55.0428L1573.53 55.24L1568.72 55.4307L1563.91 55.6149L1559.1 55.7925L1554.29 55.9635L1549.47 56.1279L1544.66 56.2855L1539.85 56.4365L1535.04 56.5806L1530.23 56.718L1525.41 56.8485L1520.6 56.9722L1515.79 57.0889L1510.98 57.1987L1506.17 57.3016L1501.35 57.3975L1496.54 57.4863L1491.73 57.5682L1486.92 57.6429L1482.11 57.7107L1477.29 57.7713L1472.48 57.8249L1467.67 57.8713L1462.86 57.9106L1458.05 57.9427L1453.23 57.9678L1448.42 57.9857L1443.61 57.9964L1438.8 58L1433.98 57.9964L1429.17 57.9857L1424.36 57.9678L1419.55 57.9427L1414.74 57.9106L1409.92 57.8713L1405.11 57.8249L1400.3 57.7713L1395.49 57.7107L1390.68 57.6429L1385.86 57.5682L1381.05 57.4863L1376.24 57.3975L1371.43 57.3016L1366.62 57.1987L1361.8 57.0889L1356.99 56.9722L1352.18 56.8485L1347.37 56.718L1342.56 56.5806L1337.74 56.4365L1332.93 56.2855L1328.12 56.1279L1323.31 55.9635L1318.5 55.7925L1313.68 55.6149L1308.87 55.4307L1304.06 55.24L1299.25 55.0428L1294.44 54.8392L1289.62 54.6292L1284.81 54.4129L1280 54.1903L1275.19 53.9615L1270.38 53.7266L1265.56 53.4855L1260.75 53.2384L1255.94 52.9854L1251.13 52.7263L1246.32 52.4615L1241.5 52.1909L1236.69 51.9145L1231.88 51.6325L1227.07 51.3449L1222.26 51.0518L1217.44 50.7532L1212.63 50.4493L1207.82 50.1401L1203.01 49.8257L1198.2 49.5061L1193.38 49.1815L1188.57 48.8519L726.617 9.14813L721.805 8.81854L716.993 8.4939L712.181 8.17432L707.369 7.85992L702.556 7.55072L697.744 7.24677L692.932 6.94824L688.12 6.65509L683.308 6.36749L678.496 6.08551L673.684 5.80914L668.872 5.53851L664.06 5.27368L659.248 5.01465L654.436 4.7616L649.624 4.51453L644.812 4.27344L640 4.03845L635.188 3.80969L630.376 3.5871L625.564 3.37079L620.752 3.16083L615.94 2.95721L611.128 2.76001L606.316 2.56934L601.504 2.38513L596.692 2.20752L591.88 2.0365L587.068 1.87213L582.256 1.71448L577.444 1.56354L572.632 1.41937L567.82 1.28198L563.008 1.15149L558.196 1.02783L553.384 0.911072L548.572 0.80127L543.76 0.698425L538.947 0.602539L534.135 0.513672L529.323 0.431824L524.511 0.357056L519.699 0.289307L514.887 0.228699L510.075 0.17511L505.263 0.128723L500.451 0.0894165L495.639 0.057251L490.827 0.0321655L486.015 0.0142822L481.203 0.00360107L476.391 0L471.579 0.00360107L466.767 0.0142822L461.955 0.0321655L457.143 0.057251L452.331 0.0894165L447.519 0.128723L442.707 0.17511L437.895 0.228699L433.083 0.289307L428.271 0.357056L423.459 0.431824L418.647 0.513672L413.835 0.602539L409.023 0.698425L404.211 0.80127L399.399 0.911072L394.587 1.02783L389.775 1.15149L384.963 1.28198L380.15 1.41937L375.338 1.56354L370.526 1.71448L365.714 1.87213L360.902 2.0365L356.09 2.20752L351.278 2.38513L346.466 2.56934L341.654 2.76001L336.842 2.95721L332.03 3.16083L327.218 3.37079L322.406 3.5871L317.594 3.80969L312.782 4.03845L307.97 4.27344L303.158 4.51453L298.346 4.7616L293.534 5.01465L288.722 5.27368L283.91 5.53851L279.098 5.80914L274.286 6.08551L269.474 6.36749L264.662 6.65509L259.85 6.94824L255.038 7.24677L250.226 7.55072L245.414 7.85992L240.602 8.17432L235.79 8.4939L230.978 8.81854L226.166 9.14813L0.00012207 28.5445V523H1920V29Z"
+                    fill="#0809A7" />
+                <path
+                    d="M0 699L230.977 679.148L235.789 678.819L240.601 678.494L245.414 678.174L250.226 677.86L255.038 677.551L259.85 677.247L264.662 676.948L269.474 676.655L274.286 676.367L279.098 676.086L283.91 675.809L288.722 675.539L293.534 675.274L298.346 675.015L303.158 674.762L307.97 674.515L312.782 674.273L317.594 674.038L322.406 673.81L327.218 673.587L332.03 673.371L336.842 673.161L341.654 672.957L346.466 672.76L351.278 672.569L356.09 672.385L360.902 672.208L365.714 672.036L370.526 671.872L375.338 671.714L380.15 671.564L384.962 671.419L389.774 671.282L394.586 671.151L399.398 671.028L404.211 670.911L409.023 670.801L413.835 670.698L418.647 670.603L423.459 670.514L428.271 670.432L433.083 670.357L437.895 670.289L442.707 670.229L447.519 670.175L452.331 670.129L457.143 670.089L461.955 670.057L466.767 670.032L471.579 670.014L476.391 670.004L481.203 670L486.015 670.004L490.827 670.014L495.639 670.032L500.451 670.057L505.263 670.089L510.075 670.129L514.887 670.175L519.699 670.229L524.511 670.289L529.323 670.357L534.135 670.432L538.947 670.514L543.759 670.603L548.571 670.698L553.383 670.801L558.195 670.911L563.008 671.028L567.82 671.151L572.632 671.282L577.444 671.419L582.256 671.564L587.068 671.714L591.88 671.872L596.692 672.036L601.504 672.208L606.316 672.385L611.128 672.569L615.94 672.76L620.752 672.957L625.564 673.161L630.376 673.371L635.188 673.587L640 673.81L644.812 674.038L649.624 674.273L654.436 674.515L659.248 674.762L664.06 675.015L668.872 675.274L673.684 675.539L678.496 675.809L683.308 676.086L688.12 676.367L692.932 676.655L697.744 676.948L702.556 677.247L707.368 677.551L712.18 677.86L716.992 678.174L721.805 678.494L726.617 678.819L731.429 679.148L1193.38 718.852L1198.2 719.181L1203.01 719.506L1207.82 719.826L1212.63 720.14L1217.44 720.449L1222.26 720.753L1227.07 721.052L1231.88 721.345L1236.69 721.633L1241.5 721.914L1246.32 722.191L1251.13 722.461L1255.94 722.726L1260.75 722.985L1265.56 723.238L1270.38 723.485L1275.19 723.727L1280 723.962L1284.81 724.19L1289.62 724.413L1294.44 724.629L1299.25 724.839L1304.06 725.043L1308.87 725.24L1313.68 725.431L1318.5 725.615L1323.31 725.792L1328.12 725.964L1332.93 726.128L1337.74 726.286L1342.56 726.436L1347.37 726.581L1352.18 726.718L1356.99 726.849L1361.8 726.972L1366.62 727.089L1371.43 727.199L1376.24 727.302L1381.05 727.397L1385.86 727.486L1390.68 727.568L1395.49 727.643L1400.3 727.711L1405.11 727.771L1409.92 727.825L1414.74 727.871L1419.55 727.911L1424.36 727.943L1429.17 727.968L1433.98 727.986L1438.8 727.996L1443.61 728L1448.42 727.996L1453.23 727.986L1458.05 727.968L1462.86 727.943L1467.67 727.911L1472.48 727.871L1477.29 727.825L1482.11 727.771L1486.92 727.711L1491.73 727.643L1496.54 727.568L1501.35 727.486L1506.17 727.397L1510.98 727.302L1515.79 727.199L1520.6 727.089L1525.41 726.972L1530.23 726.849L1535.04 726.718L1539.85 726.581L1544.66 726.436L1549.47 726.286L1554.29 726.128L1559.1 725.964L1563.91 725.792L1568.72 725.615L1573.53 725.431L1578.35 725.24L1583.16 725.043L1587.97 724.839L1592.78 724.629L1597.59 724.413L1602.41 724.19L1607.22 723.962L1612.03 723.727L1616.84 723.485L1621.65 723.238L1626.47 722.985L1631.28 722.726L1636.09 722.461L1640.9 722.191L1645.71 721.914L1650.53 721.633L1655.34 721.345L1660.15 721.052L1664.96 720.753L1669.77 720.449L1674.59 720.14L1679.4 719.826L1684.21 719.506L1689.02 719.181L1693.83 718.852L1920 699.456V181H0V699Z"
+                    fill="#0809A7" />
+                <mask id="mask0_416_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920"
+                    height="728">
+                    <path
+                        d="M1920 29L1689.02 48.8519L1684.21 49.1815L1679.4 49.5061L1674.59 49.8257L1669.77 50.1401L1664.96 50.4493L1660.15 50.7532L1655.34 51.0518L1650.53 51.3449L1645.71 51.6325L1640.9 51.9145L1636.09 52.1909L1631.28 52.4615L1626.47 52.7263L1621.65 52.9854L1616.84 53.2384L1612.03 53.4855L1607.22 53.7266L1602.41 53.9615L1597.59 54.1903L1592.78 54.4129L1587.97 54.6292L1583.16 54.8392L1578.35 55.0428L1573.53 55.24L1568.72 55.4307L1563.91 55.6149L1559.1 55.7925L1554.29 55.9635L1549.47 56.1279L1544.66 56.2855L1539.85 56.4365L1535.04 56.5806L1530.23 56.718L1525.41 56.8485L1520.6 56.9722L1515.79 57.0889L1510.98 57.1987L1506.17 57.3016L1501.35 57.3975L1496.54 57.4863L1491.73 57.5682L1486.92 57.6429L1482.11 57.7107L1477.29 57.7713L1472.48 57.8249L1467.67 57.8713L1462.86 57.9106L1458.05 57.9427L1453.23 57.9678L1448.42 57.9857L1443.61 57.9964L1438.8 58L1433.98 57.9964L1429.17 57.9857L1424.36 57.9678L1419.55 57.9427L1414.74 57.9106L1409.92 57.8713L1405.11 57.8249L1400.3 57.7713L1395.49 57.7107L1390.68 57.6429L1385.86 57.5682L1381.05 57.4863L1376.24 57.3975L1371.43 57.3016L1366.62 57.1987L1361.8 57.0889L1356.99 56.9722L1352.18 56.8485L1347.37 56.718L1342.56 56.5806L1337.74 56.4365L1332.93 56.2855L1328.12 56.1279L1323.31 55.9635L1318.5 55.7925L1313.68 55.6149L1308.87 55.4307L1304.06 55.24L1299.25 55.0428L1294.44 54.8392L1289.62 54.6292L1284.81 54.4129L1280 54.1903L1275.19 53.9615L1270.38 53.7266L1265.56 53.4855L1260.75 53.2384L1255.94 52.9854L1251.13 52.7263L1246.32 52.4615L1241.5 52.1909L1236.69 51.9145L1231.88 51.6325L1227.07 51.3449L1222.26 51.0518L1217.44 50.7532L1212.63 50.4493L1207.82 50.1401L1203.01 49.8257L1198.2 49.5061L1193.38 49.1815L1188.57 48.8519L726.617 9.14813L721.805 8.81854L716.993 8.4939L712.181 8.17432L707.369 7.85992L702.556 7.55072L697.744 7.24677L692.932 6.94824L688.12 6.65509L683.308 6.36749L678.496 6.08551L673.684 5.80914L668.872 5.53851L664.06 5.27368L659.248 5.01465L654.436 4.7616L649.624 4.51453L644.812 4.27344L640 4.03845L635.188 3.80969L630.376 3.5871L625.564 3.37079L620.752 3.16083L615.94 2.95721L611.128 2.76001L606.316 2.56934L601.504 2.38513L596.692 2.20752L591.88 2.0365L587.068 1.87213L582.256 1.71448L577.444 1.56354L572.632 1.41937L567.82 1.28198L563.008 1.15149L558.196 1.02783L553.384 0.911072L548.572 0.80127L543.76 0.698425L538.947 0.602539L534.135 0.513672L529.323 0.431824L524.511 0.357056L519.699 0.289307L514.887 0.228699L510.075 0.17511L505.263 0.128723L500.451 0.0894165L495.639 0.057251L490.827 0.0321655L486.015 0.0142822L481.203 0.00360107L476.391 0L471.579 0.00360107L466.767 0.0142822L461.955 0.0321655L457.143 0.057251L452.331 0.0894165L447.519 0.128723L442.707 0.17511L437.895 0.228699L433.083 0.289307L428.271 0.357056L423.459 0.431824L418.647 0.513672L413.835 0.602539L409.023 0.698425L404.211 0.80127L399.399 0.911072L394.587 1.02783L389.775 1.15149L384.963 1.28198L380.15 1.41937L375.338 1.56354L370.526 1.71448L365.714 1.87213L360.902 2.0365L356.09 2.20752L351.278 2.38513L346.466 2.56934L341.654 2.76001L336.842 2.95721L332.03 3.16083L327.218 3.37079L322.406 3.5871L317.594 3.80969L312.782 4.03845L307.97 4.27344L303.158 4.51453L298.346 4.7616L293.534 5.01465L288.722 5.27368L283.91 5.53851L279.098 5.80914L274.286 6.08551L269.474 6.36749L264.662 6.65509L259.85 6.94824L255.038 7.24677L250.226 7.55072L245.414 7.85992L240.602 8.17432L235.79 8.4939L230.978 8.81854L226.166 9.14813L0.00012207 28.5445V523H1920V29Z"
+                        fill="#050783" />
+                    <path
+                        d="M0 699L230.977 679.148L235.789 678.819L240.601 678.494L245.414 678.174L250.226 677.86L255.038 677.551L259.85 677.247L264.662 676.948L269.474 676.655L274.286 676.367L279.098 676.086L283.91 675.809L288.722 675.539L293.534 675.274L298.346 675.015L303.158 674.762L307.97 674.515L312.782 674.273L317.594 674.038L322.406 673.81L327.218 673.587L332.03 673.371L336.842 673.161L341.654 672.957L346.466 672.76L351.278 672.569L356.09 672.385L360.902 672.208L365.714 672.036L370.526 671.872L375.338 671.714L380.15 671.564L384.962 671.419L389.774 671.282L394.586 671.151L399.398 671.028L404.211 670.911L409.023 670.801L413.835 670.698L418.647 670.603L423.459 670.514L428.271 670.432L433.083 670.357L437.895 670.289L442.707 670.229L447.519 670.175L452.331 670.129L457.143 670.089L461.955 670.057L466.767 670.032L471.579 670.014L476.391 670.004L481.203 670L486.015 670.004L490.827 670.014L495.639 670.032L500.451 670.057L505.263 670.089L510.075 670.129L514.887 670.175L519.699 670.229L524.511 670.289L529.323 670.357L534.135 670.432L538.947 670.514L543.759 670.603L548.571 670.698L553.383 670.801L558.195 670.911L563.008 671.028L567.82 671.151L572.632 671.282L577.444 671.419L582.256 671.564L587.068 671.714L591.88 671.872L596.692 672.036L601.504 672.208L606.316 672.385L611.128 672.569L615.94 672.76L620.752 672.957L625.564 673.161L630.376 673.371L635.188 673.587L640 673.81L644.812 674.038L649.624 674.273L654.436 674.515L659.248 674.762L664.06 675.015L668.872 675.274L673.684 675.539L678.496 675.809L683.308 676.086L688.12 676.367L692.932 676.655L697.744 676.948L702.556 677.247L707.368 677.551L712.18 677.86L716.992 678.174L721.805 678.494L726.617 678.819L731.429 679.148L1193.38 718.852L1198.2 719.181L1203.01 719.506L1207.82 719.826L1212.63 720.14L1217.44 720.449L1222.26 720.753L1227.07 721.052L1231.88 721.345L1236.69 721.633L1241.5 721.914L1246.32 722.191L1251.13 722.461L1255.94 722.726L1260.75 722.985L1265.56 723.238L1270.38 723.485L1275.19 723.727L1280 723.962L1284.81 724.19L1289.62 724.413L1294.44 724.629L1299.25 724.839L1304.06 725.043L1308.87 725.24L1313.68 725.431L1318.5 725.615L1323.31 725.792L1328.12 725.964L1332.93 726.128L1337.74 726.286L1342.56 726.436L1347.37 726.581L1352.18 726.718L1356.99 726.849L1361.8 726.972L1366.62 727.089L1371.43 727.199L1376.24 727.302L1381.05 727.397L1385.86 727.486L1390.68 727.568L1395.49 727.643L1400.3 727.711L1405.11 727.771L1409.92 727.825L1414.74 727.871L1419.55 727.911L1424.36 727.943L1429.17 727.968L1433.98 727.986L1438.8 727.996L1443.61 728L1448.42 727.996L1453.23 727.986L1458.05 727.968L1462.86 727.943L1467.67 727.911L1472.48 727.871L1477.29 727.825L1482.11 727.771L1486.92 727.711L1491.73 727.643L1496.54 727.568L1501.35 727.486L1506.17 727.397L1510.98 727.302L1515.79 727.199L1520.6 727.089L1525.41 726.972L1530.23 726.849L1535.04 726.718L1539.85 726.581L1544.66 726.436L1549.47 726.286L1554.29 726.128L1559.1 725.964L1563.91 725.792L1568.72 725.615L1573.53 725.431L1578.35 725.24L1583.16 725.043L1587.97 724.839L1592.78 724.629L1597.59 724.413L1602.41 724.19L1607.22 723.962L1612.03 723.727L1616.84 723.485L1621.65 723.238L1626.47 722.985L1631.28 722.726L1636.09 722.461L1640.9 722.191L1645.71 721.914L1650.53 721.633L1655.34 721.345L1660.15 721.052L1664.96 720.753L1669.77 720.449L1674.59 720.14L1679.4 719.826L1684.21 719.506L1689.02 719.181L1693.83 718.852L1920 699.456V181H0V699Z"
+                        fill="#050783" />
+                </mask>
+            </clipPath>
+        </defs>
+    </svg>
+    <svg width="440" height="269" viewBox="0 0 440 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="schemeone">
+            <path
+                d="M20 0C8.95431 0 0 8.95429 0 20V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V177.073L438.319 139.323C439.858 137.03 439.858 133.312 438.319 131.018L413 93.2681V20C413 8.9543 404.046 0 393 0H20Z"
+                fill="#969AF7" />
+            <path
+                d="M20 0C8.95431 0 0 8.95429 0 20V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V177.073L438.319 139.323C439.858 137.03 439.858 133.312 438.319 131.018L413 93.2681V20C413 8.9543 404.046 0 393 0H20Z"
+                fill="url(#paint0_linear_13_390)" />
+            <path
+                d="M20 0C8.95431 0 0 8.95429 0 20V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V177.073L438.319 139.323C439.858 137.03 439.858 133.312 438.319 131.018L413 93.2681V20C413 8.9543 404.046 0 393 0H20Z"
+                fill="url(#paint1_linear_13_390)" />
+        </clipPath>
+    </svg>
+    <svg width="0" height="0" viewBox="0 0 443 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="schemetwo">
+            <path
+                d="M23 0.999971C11.9543 -1.00003 1 8.95426 1 21V87.5L29 136.018L1 185L0 249.372C1 261.418 10.9543 269.372 23 269.372H396C407.046 268.372 413 260.418 414 249.372V178.073L441.319 140.323C442.858 138.03 442.858 134.311 441.319 132.018L414 94.2681V21C414 9.95427 407.046 0.999971 396 0.999971H23Z" />
+            <path
+                d="M23 0.999971C11.9543 -1.00003 1 8.95426 1 21V87.5L29 136.018L1 185L0 249.372C1 261.418 10.9543 269.372 23 269.372H396C407.046 268.372 413 260.418 414 249.372V178.073L441.319 140.323C442.858 138.03 442.858 134.311 441.319 132.018L414 94.2681V21C414 9.95427 407.046 0.999971 396 0.999971H23Z" />
+            <path
+                d="M23 0.999971C11.9543 -1.00003 1 8.95426 1 21V87.5L29 136.018L1 185L0 249.372C1 261.418 10.9543 269.372 23 269.372H396C407.046 268.372 413 260.418 414 249.372V178.073L441.319 140.323C442.858 138.03 442.858 134.311 441.319 132.018L414 94.2681V21C414 9.95427 407.046 0.999971 396 0.999971H23Z" />
+        </clipPath>
+    </svg>
+    <svg width="413" height="299" viewBox="0 0 413 299" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="schemethree">
+            <path
+                d="M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z"
+                fill="#969AF7" />
+            <path
+                d="M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z"
+                fill="url(#paint0_linear_13_388)" />
+            <path
+                d="M150.208 244.803C148.217 242.891 148.26 239.835 150.304 237.979L205.538 187.839C207.583 185.982 210.855 186.029 212.846 187.941L266.927 239.883C268.918 241.796 268.875 244.851 266.831 246.707L211.597 296.848C209.552 298.704 206.28 298.658 204.288 296.745L150.208 244.803Z"
+                fill="#969AF7" />
+            <path
+                d="M150.208 244.803C148.217 242.891 148.26 239.835 150.304 237.979L205.538 187.839C207.583 185.982 210.855 186.029 212.846 187.941L266.927 239.883C268.918 241.796 268.875 244.851 266.831 246.707L211.597 296.848C209.552 298.704 206.28 298.658 204.288 296.745L150.208 244.803Z"
+                fill="url(#paint1_linear_13_388)" />
+        </clipPath>
+    </svg>
+    <svg width="413" height="269" viewBox="0 0 413 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="schemesix">
+            <path
+                d="M393 0.62793C404.046 0.62793 413 9.58222 413 20.6279V85.1841L385.013 131.203C383.578 133.562 383.578 137.388 385.013 139.747L413 185.766V249C413 260.046 404.046 269 393 269H20C8.95432 269 0 260.046 0 249V20.6279C0 9.58223 8.95432 0.62793 20 0.62793H393Z"
+                fill="#969AF7" />
+            <path
+                d="M393 0.62793C404.046 0.62793 413 9.58222 413 20.6279V85.1841L385.013 131.203C383.578 133.562 383.578 137.388 385.013 139.747L413 185.766V249C413 260.046 404.046 269 393 269H20C8.95432 269 0 260.046 0 249V20.6279C0 9.58223 8.95432 0.62793 20 0.62793H393Z"
+                fill="url(#paint0_linear_13_363)" />
+        </clipPath>
+    </svg>
+    <svg width="442" height="269" viewBox="0 0 442 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="schemefive">
+            <path
+                d="M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z"
+                fill="#969AF7" />
+            <path
+                d="M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z"
+                fill="url(#paint0_linear_13_336)" />
+            <path
+                d="M50.1983 65.9281C48.6601 63.6347 46.1662 63.6347 44.628 65.9281L1.15363 130.747C-0.384545 133.04 -0.384543 136.758 1.15363 139.051L44.6281 203.87C46.1662 206.163 48.6601 206.163 50.1983 203.87L93.6727 139.051C95.2109 136.758 95.2109 133.04 93.6727 130.747L50.1983 65.9281Z"
+                fill="#969AF7" />
+            <path
+                d="M50.1983 65.9281C48.6601 63.6347 46.1662 63.6347 44.628 65.9281L1.15363 130.747C-0.384545 133.04 -0.384543 136.758 1.15363 139.051L44.6281 203.87C46.1662 206.163 48.6601 206.163 50.1983 203.87L93.6727 139.051C95.2109 136.758 95.2109 133.04 93.6727 130.747L50.1983 65.9281Z"
+                fill="url(#paint1_linear_13_336)" />
+        </clipPath>
+    </svg>
+    <svg width="440" height="269" viewBox="0 0 440 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <clipPath id="schemefour">
+            <path
+                d="M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z"
+                fill="#969AF7" />
+            <path
+                d="M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z"
+                fill="url(#paint0_linear_13_335)" />
+            <path
+                d="M44.6281 66.556C46.1662 64.2626 48.6601 64.2626 50.1983 66.556L93.6727 131.374C95.2109 133.668 95.2109 137.386 93.6727 139.679L50.1983 204.498C48.6601 206.791 46.1662 206.791 44.628 204.498L1.15363 139.679C-0.384545 137.386 -0.384543 133.668 1.15363 131.374L44.6281 66.556Z"
+                fill="#969AF7" />
+            <path
+                d="M44.6281 66.556C46.1662 64.2626 48.6601 64.2626 50.1983 66.556L93.6727 131.374C95.2109 133.668 95.2109 137.386 93.6727 139.679L50.1983 204.498C48.6601 206.791 46.1662 206.791 44.628 204.498L1.15363 139.679C-0.384545 137.386 -0.384543 133.668 1.15363 131.374L44.6281 66.556Z"
+                fill="url(#paint1_linear_13_335)" />
+        </clipPath>
+    </svg>
+
+
+    <script src="/js-plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
