@@ -53,7 +53,7 @@
   box-sizing: border-box;
 }
 
-ul[class],
+ul,
 ol[class] {
   padding: 0;
 }
@@ -87,6 +87,7 @@ body {
 ul,
 ol {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -137,6 +138,7 @@ section {
   overflow: hidden;
   background: url("/images/background/header.svg") no-repeat;
   background-clip: border-box;
+  background-size: auto;
 }
 
 .header__menu {
@@ -241,7 +243,6 @@ section {
 .hero__desc {
   max-width: 672px;
   font: 400 23px 'FuturaBookC';
-  font-family: FuturaBookC;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
@@ -266,6 +267,10 @@ section {
   -o-border-radius: 10px;
 }
 
+.hero__card ul {
+  padding-left: 40px;
+}
+
 .hero__points {
   position: relative;
 }
@@ -285,12 +290,33 @@ section {
   max-width: 380px;
 }
 
+.hero-right .orange__button {
+  display: none;
+}
+
+.modular {
+  z-index: 3;
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(135, 131, 135, 0.5);
+}
+
 .backcall {
   min-width: 380px;
   height: 473px;
   color: var(--light-text);
   overflow: hidden;
   border-radius: 10px;
+  opacity: 1;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -342,7 +368,6 @@ section {
   border-right: none;
   border-top: #07096c7e 2px solid;
   border-left: #07096c7e 2px solid;
-  text-align: calc(100% - 90%);
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -491,26 +516,16 @@ section {
   text-align: center;
 }
 
-.partners__carousel {
-  position: relative;
-  max-width: 100%;
-  margin-top: 57px;
-  height: 174px;
-}
-
 .partners__desc {
   margin-top: 42px;
   text-overflow: ellipsis;
 }
 
 .swiper {
-  height: 100%;
-  width: 100%;
-}
-
-.swiper-wrapper {
-  height: inherit;
-  max-width: 1262px;
+  position: relative;
+  max-width: 100%;
+  margin-top: 57px;
+  height: 174px;
 }
 
 .swiper-slide {
@@ -527,20 +542,21 @@ section {
 
 .swiper-button-prev,
 .swiper-button-next {
+  z-index: 2;
   position: absolute;
-  top: 40%;
   height: 41px;
   width: 41px;
-  background-size: contain;
   cursor: pointer;
 }
 
 .swiper-button-prev {
-  left: -8%;
+  top: 43.5%;
+  left: 13%;
 }
 
 .swiper-button-next {
-  right: -8%;
+  top: 43.5%;
+  right: 13%;
 }
 
 /* Scheme */
@@ -575,7 +591,9 @@ section {
 
 .scheme__cards {
   position: relative;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3%;
   margin-top: 46px;
   width: inherit;
   height: 600px;
@@ -583,6 +601,7 @@ section {
 
 .scheme__card {
   height: 268px;
+  min-width: 35%;
   padding: 40px 35px;
   background: linear-gradient(95.22deg, #041080 -2.85%, #0926C0 93.37%), linear-gradient(180deg, var(--light-violet) 0%, #686EEC 100%), var(--light-violet);
   border-radius: 16px;
@@ -590,6 +609,13 @@ section {
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
+}
+
+.scheme__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .scheme__number {
@@ -601,7 +627,7 @@ section {
 .scheme__title {
   margin-left: 16px;
   display: inline-block;
-  max-width: 300px;
+  max-width: 280px;
   font: 700 18px/25px 'FuturaFuturisC';
   text-align: left;
   color: var(--light-text);
@@ -667,15 +693,17 @@ section {
   left: 66%;
 }
 
-.scheme__button,
+.orange__button,
 .footer__button {
   margin-top: 20px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 56px;
   width: 300px;
   background-color: var(--btns-color);
   color: var(--light-text);
-  font: 400 18px/56px 'FuturaFuturisC';
+  font: 400 18px/18px 'FuturaFuturisC';
   text-transform: uppercase;
   text-align: center;
   border-radius: 10px;
@@ -879,65 +907,469 @@ section {
   justify-content: space-evenly;
 }
 
+.footer__link {
+  text-decoration: none;
+  color: var(--light-text);
+}
+
 .footer__button {
   margin-top: 0;
+  margin-right: 10px;
   max-width: 260px;
   background-color: var(--light-violet);
 }
 
-@media (min-width: 376px) {}
-
-@media (min-width: 575.98px) {
+@media (min-width: 1700px) {
 
   section,
   header,
   footer {
-    padding: 0 calc(50% - 270px);
+    padding: 0 calc(50% - 631px);
+  }
+
+  .swiper-button-prev {
+    left: 8%;
+  }
+
+  .swiper-button-next {
+    right: 8%;
   }
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: 1400px) and (max-width: 1700px) {
+
+  section,
+  header,
+  footer {
+    padding: 0 calc(50% - 631px);
+  }
+
+  .swiper-button-prev {
+    left: 2%;
+  }
+
+  .swiper-button-next {
+    right: 2%;
+  }
+}
+
+@media (max-width: 1399.98px) {
+
+  section,
+  header,
+  footer {
+    padding: 0 calc(50% - 590px);
+  }
+
+  .footer__list {
+    padding: 10px 0;
+    margin-left: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__title {
+    font: 700 50px 'FuturaFuturisC';
+    line-height: 2em;
+  }
+
+  .hero__title-helper {
+    font: 700 40px 'FuturaFuturisC';
+    top: 75px;
+  }
+
+  .scheme__card:nth-child(4) {
+    order: 3;
+  }
+
+  .scheme__card:nth-child(5) {
+    order: 2;
+  }
+
+  .scheme__card:nth-child(6) {
+    order: 1;
+  }
+
+  .scheme__number {
+    font: 700 24px/24px 'FuturaFuturisC';
+  }
+
+  .scheme__title {
+    font: 700 16px/16px 'FuturaFuturisC';
+    max-width: 200px;
+  }
+
+  .scheme__text {
+    margin-left: 1.5em;
+  }
+
+  .swiper {
+    max-width: 90%;
+  }
+
+  .swiper-button-prev {
+    left: 2%;
+  }
+
+  .swiper-button-next {
+    right: 2%;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  section,
+  header,
+  footer {
+    padding: 0 calc(50% - 520px);
+  }
+
+  .header__menu a {
+    flex: 0 1 auto;
+  }
+
+  .header__navigation {
+    display: flex;
+    flex: 1 0 auto;
+    margin-left: 20px;
+    height: 40px;
+    width: 40px;
+    background: url("/images/icons/burger.svg") no-repeat;
+    cursor: pointer;
+  }
+
+  .header__navigation ul {
+    display: none;
+  }
+
+  .header__phone {
+    justify-self: flex-end;
+  }
+
+  .questions__item-block {
+    padding: 0 23px;
+    font: 400 22px/22px 'FuturaBookC';
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  section,
+  header,
+  footer {
+    padding: 0 calc(50% - 420px);
+  }
+
+  .hero__title {
+    font: 700 40px 'FuturaFuturisC';
+    line-height: 2em;
+  }
+
+  .hero__title-helper {
+    font: 700 35px 'FuturaFuturisC';
+    top: 58px;
+  }
+
+  .hero__desc {
+    max-width: 500px;
+    font: 400 20px/20px 'FuturaBookC';
+  }
+
+  .backcall {
+    min-width: inherit;
+    height: auto;
+  }
+
+  .about__desc {
+    margin-top: 0;
+  }
+
+  .about__cards {
+    margin-top: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .about__card {
+    padding: 20px;
+    height: auto;
+
+  }
+
+  .scheme__header {
+    margin-top: 30px;
+  }
+
+  .scheme__cards {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+    height: fit-content;
+  }
+
+  .scheme__card {
+    padding: 15px 10px;
+    height: auto;
+    min-width: 35%;
+  }
+
+  .scheme__text {
+    font: 400 18px/20px 'FuturaBookC';
+  }
+
+  .partners__desc {
+    padding: 0 30px;
+  }
+
+  .swiper {
+    max-width: 80%;
+  }
+
+  .swiper-button-prev {
+    left: 2%;
+  }
+
+  .swiper-button-next {
+    right: 2%;
+  }
+
+  .questions__item-block {
+    padding: 0 15px;
+    font: 400 16px/16px 'FuturaBookC';
+  }
+}
+
+@media (max-width: 850px) {
 
   section,
   header,
   footer {
     padding: 0 calc(50% - 360px);
   }
-}
 
-@media (min-width: 991.98px) {
+  .hero-left {
+    margin-right: 10px;
+  }
 
-  section,
-  header,
-  footer {
-    padding: 0 calc(50% - 480px);
+  .hero__title {
+    font: 700 34px 'FuturaFuturisC';
+    line-height: 2em;
+  }
+
+  .hero__title-helper {
+    font: 700 30px 'FuturaFuturisC';
+    top: 50px;
+  }
+
+  .hero__card {
+    margin-top: 65px;
+    font: 400 18px 'FuturaBookC';
+    line-height: 26px;
+  }
+
+  .footer__button {
+    width: -webkit-fill-available;
   }
 }
 
-@media (min-width: 1179.98px) {
+@media (max-width: 650px) {
 
   section,
   header,
   footer {
-    padding: 0 calc(50% - 590px);
+    padding: 0 calc(50% - 270px);
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .hero-left {
+    margin-top: 150px;
+    margin-right: 0;
+  }
+
+  .hero-right {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .hero-right .backcall {
+    display: none;
+  }
+
+  .hero-right .orange__button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .about__card {
+    min-height: 280px;
+  }
+
+  .about__card img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .scheme__text {
+    font: 400 16px/16px 'FuturaBookC';
+  }
+
+  .partners::before {
+    top: -133%;
+  }
+
+  .questions__item {
+    height: 70px;
+  }
+
+  .questions__arrow {
+    height: 30px;
+  }
+
+  .footer__button {
+    font: 400 18px/18px 'FuturaFuturisC';
   }
 }
 
-@media (min-width: 1259.98px) {
+@media (max-width: 550px) {
 
   section,
   header,
   footer {
-    padding: 0 calc(50% - 590px);
+    padding: 0 calc(50% - 220px);
+  }
+
+  h2 {
+    font: 700 37px 'FuturaFuturisC';
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about__card {
+    flex-direction: row;
+    min-height: auto;
+  }
+
+  .about__card-desc {
+    display: none;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 35.5%;
+  }
+
+  .scheme__cards {
+    margin-top: 15px;
+  }
+
+  .scheme__text {
+    margin-top: 14px;
+  }
+
+  .questions__arrow {
+    height: 25px;
+  }
+
+  .footer__list {
+    margin-left: 10px;
   }
 }
 
-
-@media (min-width: 1399.98px) {
+@media (max-width: 450px) {
 
   section,
   header,
   footer {
-    padding: 0 calc(50% - 631px);
+    padding: 0 calc(50% - 190px);
+  }
+
+  h2 {
+    font: 700 30px 'FuturaFuturisC';
+  }
+
+  .swiper {
+    height: 150px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 32.5%;
+  }
+
+  .orange__button {
+    height: 50px;
+    width: 260px;
+  }
+
+  .questions__title {
+    font: 600 20px/20px 'FuturaDemiC';
+    color: #000;
+    text-align: left;
+  }
+
+  .open+.questions__item-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer__logo {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  section,
+  header,
+  footer {
+    padding: 0 calc(50% - 175px);
+  }
+  .header__menu {
+    height: 100px;
+    padding: 34px 0;
+  }
+
+  .hero-left {
+    margin-top: 130px;
+  }
+  .hero__title {
+    font: 700 30px 'FuturaFuturisC';
+    line-height: 2em;
+  }
+  .hero__title-helper {
+    font: 700 24px 'FuturaFuturisC';
+    top: 45px;
+  }
+  .hero__card {
+    line-height: 20px;
+  }
+  .partners::before {
+    top: -130%;
+  }
+  .about__cards {
+    padding: 0 10px;
+  }
+  .swiper {
+    margin-top: 100px;
+  }
+  .scheme__row {
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .scheme__text {
+    margin-top: 6px;
+  }
+  .questions__list {
+    row-gap: 8px;
   }
 }
